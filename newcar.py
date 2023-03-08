@@ -2,15 +2,12 @@ import math
 import random
 import sys
 import os
-
 import neat
 import pygame
 
 # Constants
 # WIDTH = 1600
 # HEIGHT = 880
-
-
 
 WIDTH = 1920
 HEIGHT = 1080
@@ -177,13 +174,13 @@ def run_simulation(genomes, config):
     generation_font = pygame.font.SysFont("Arial", 30)
     alive_font = pygame.font.SysFont("Arial", 20)
     # game_map = pygame.image.load('map.png').convert() # Convert Speeds Up A Lot
-    game_map = pygame.image.load('map.png').convert() # Convert Speeds Up A Lot
+    game_map = pygame.image.load('map2.png').convert() # Convert Speeds Up A Lot
 
 
     global current_generation
     current_generation += 1
 
-    # Simple Counter To Roughly Limit Time (Not Good Practice)
+    # Simple Counter To Roughly Limit Time
     counter = 0
 
     while True:
