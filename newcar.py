@@ -6,9 +6,6 @@ import neat
 import pygame
 
 # Constants
-# WIDTH = 1600
-# HEIGHT = 880
-
 WIDTH = 1920
 HEIGHT = 1080
 
@@ -265,5 +262,5 @@ if __name__ == "__main__":
     stats = neat.StatisticsReporter()
     population.add_reporter(stats)
     
-    # Run Simulation For A Maximum of 1000 Generations
-    population.run(run_simulation, 1000)
+    # Run Simulation For A Maximum of 15 Generations
+    population.run(run_simulation, 15)
